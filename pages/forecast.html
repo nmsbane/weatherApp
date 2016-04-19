@@ -1,0 +1,17 @@
+Forecast for {{ city }}
+<hr />
+<a href="#/">Back to search page</a>
+ <hr />
+<div>
+    Days: <a href="#/forecast/2" ng-class="{ 'bg-primary': days === '2'} "> For next 2 days </a> | <a href="#/forecast/5" ng-class="{ 'bg-primary': days === '5'} ">For next 5 days</a> |
+    <a href="#/forecast/7" ng-class="{ 'bg-primary': days === '7'} ">For next 7 days</a>
+</div>
+<hr />
+<div ng-repeat="w in weatherResult.list">
+    <div class="row">
+        <div class="col-md-12">
+            <weather-report weather-day="w" date-format='medium' convert-to-standard="convertToCelcius(dayTimeTemp)" 
+             convert-to-date="convertToDate(dt)"></weather-report>
+        </div>
+    </div>
+</div>
