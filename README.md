@@ -18,3 +18,12 @@ The data is fetched from openweathermap api.
 
 * Get data from third party api, using `$http` service.
 
+# how to run the application.
+
+* clone the repo to a local directory of your choice.
+
+* Go to the directory where you cloned the repo, and run a simple webserver using the following command `python -m SimpleHTTPServer 9000` 
+
+* Go to a browser of your choice and go to this url `http://127.0.0.1:9000/index.html`
+
+
